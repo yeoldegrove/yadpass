@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=yadpass
+Type=Application
+Icon=yadpass
+Exec=$HOME/bin/yadpass
+Categories=Utility;
