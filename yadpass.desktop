@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=yadpass
 Type=Application
-Icon=yadpass
+Icon=yadpass_256x256
 Exec=/usr/bin/yadpass
 Categories=Utility;
