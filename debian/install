@@ -1,0 +1,4 @@
+yadpass usr/bin
+yadpass.desktop usr/share/applications
+yadpass_256x256.png usr/share/icons/hicolor/256x256/apps
+README.md usr/share/docs/yadpass

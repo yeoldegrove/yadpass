@@ -1,0 +1,20 @@
+Source: yadpass
+Section: utils
+Priority: optional
+Maintainer: Eike Waldt <git@yeoldegrove.de>
+Standards-Version: 4.5.0
+Build-Depends: debhelper (>= 12~)
+Homepage: https://github.com/yeoldegrove/yadpass
+Vcs-Browser: https://github.com/yeoldegrove/yadpass
+Vcs-Git: https://github.com/yeoldegrove/yadpass.git
+
+Package: yadpass
+Architecture: all
+Depends: ${misc:Depends}, pass, yad, xclip, wl-clipboard
+Description: little hacky GTK frontend for pass built using yad (a zenity clone)
+ This is a little hacky GTK frontend for pass built using yad (a zenity clone).
+ It lets you query for passwords for your git cloned pass repository 
+ in ~/.password-store. The found entires can be clipboarded by wl-copy/xclip
+ or shown in cleartext on the screen.
+ It will work with X11 and Wayland and was initially designed for phosh on
+ pinephone and Librem 5.

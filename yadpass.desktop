@@ -2,5 +2,5 @@
 Name=yadpass
 Type=Application
 Icon=yadpass
-Exec=$HOME/bin/yadpass
+Exec=/usr/bin/yadpass
 Categories=Utility;
