@@ -33,12 +33,19 @@ pgrep Xorg >/dev/null && clip_prog="xclip -rmlastnl -l 1"
 
 do_input() {
   input=""
-  input=$(yad --auto-kill --no-markup --title "yadpass" --text "search password" --form --field="")
+  input=$(yad --auto-kill --no-markup --title "yadpass" --text "\n${git_pull_output}\nsearchterm for password" --form --field="" --button="git pull":10 --button="search":5) action="${?}"
   input=${input//|/}
-  if [ "${?}" -eq "1" ]; then
+  if [ "${action}" -eq "1" ]; then
     exit 0
+  elif [ "${action}" -eq "10" ]; then
+    do_git_pull
   fi
   do_search
+}
+
+do_git_pull() {
+  git_pull_output=$(pass git pull)
+  do_input
 }
 
 do_search() {
