@@ -13,7 +13,7 @@ sudo apt-get install pass yad xclip wl-clipboard
 ## install to homedir and add desktop entry
 ```
 mkdir -p ~/bin /tmp/yadpass_install
-curl -o ~/bin/yadpass https://raw.githubusercontent.com/yeoldegrove/yadpass/master/yadpass.sh 
+curl -o ~/bin/yadpass https://raw.githubusercontent.com/yeoldegrove/yadpass/master/yadpass
 chmod +x ~/bin/yadpass
 curl -o /tmp/yadpass_install/yadpass.desktop https://raw.githubusercontent.com/yeoldegrove/yadpass/master/yadpass.desktop
 sed -i "s#\$HOME#$HOME#g" /tmp/yadpass_install/yadpass.desktop
