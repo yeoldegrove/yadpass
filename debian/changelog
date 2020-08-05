@@ -1,3 +1,14 @@
+yadpass (0.0.5) unstable; urgency=medium
+
+  * add "pass git pull"
+  * fix icon
+  * add "pass git pull"
+  * fix icon
+  * rename master to upstream
+  * fix manual install instructions in README
+
+ -- Eike Waldt <git@yeoldegrove.de>  Wed, 05 Aug 2020 10:20:26 +0200
+
 yadpass (0.0.1) unstable; urgency=medium
 
   * Initial Release.
